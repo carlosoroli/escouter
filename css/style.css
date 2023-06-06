@@ -7,22 +7,100 @@
 }
 
 /* GENERAL */
-body{
+html{
     font-family: "Inter", sans-serif;
+}
+
+body{
     min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
 }
 
-/* STYLES */
-header h1{
-    font-style: italic;
-}
-
-ul li{
+/* HEADER ------------------------------------- */
+header{
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+h1{
+    padding: 1rem;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    padding-bottom: 1rem;
+}
+nav a, nav a:visited{
+    text-decoration: none;
+}
+/* FILTERS --------------------------------------- */
+.section-filters{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    padding: 1rem;
+}
+.games, .filters{
+    display: flex;
+    gap: 0.5rem;
+}
+.games div, .filters div{
+    padding: 0.25rem 1rem;
+    border:1px solid gray;
+    border-radius: 100px;
+}
+.section-filters{
+    border-bottom: 1px solid gray;
+    padding-bottom: 4rem;
+}
+/* LIST -------------------------------------------- */
+ul{
+ padding: 1rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 2rem;
 }
 
-li a, li a:visited{
-    text-decoration: none;
-    color: black;
+li{
+    list-style: none;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding: 2rem 2rem;
+    border: 1px solid gray;
+    border-radius: 2rem;
+}
+.player-pic{
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    margin-right: 2rem;
+    border-radius: 100px;
+}
+.player-info{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.tags div{
+    border: 1px solid gray;
+    border-radius: 100px;
+    padding: .25rem 1rem;
 }
